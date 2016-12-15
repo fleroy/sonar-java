@@ -28,4 +28,10 @@ public class CastArithmeticOperandCheckTest {
   public void test() {
     JavaCheckVerifier.verify("src/test/files/checks/CastArithmeticOperandCheck.java", new CastArithmeticOperandCheck());
   }
+
+  @Test
+  public void integer_factor_in_expression() throws Exception {
+    JavaCheckVerifier.verify("src/test/files/checks/CastArithmeticOperandCheckIntFactor.java", new CastArithmeticOperandCheck());
+
+  }
 }
